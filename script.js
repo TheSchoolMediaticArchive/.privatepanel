@@ -8,11 +8,11 @@ function submit()
     const admun = document.getElementById("admin");
    const usr = document.getElementById("usr").value;
    const pass = document.getElementById("code").value;
-  if (usr =="luacoder279")
+  if (usr =="Admin")
     {
-      if (pass == "1520")
+      if (pass == "12345678")
         {
-          fetch('https://api.github.com/repos/Fusion-Softworks-LLC/Fusion-Utility-System/commits?per_page=')
+          fetch('https://api.github.com/repos/TheSchoolMediaticArchive/CDG/commits?per_page=')
   .then(res => res.json())
   .then(res => {
     document.getElementById('message').innerHTML = res[0].commit.message
