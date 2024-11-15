@@ -19,6 +19,18 @@ function submit()
     document.getElementById('author').innerHTML = res[0].commit.author.name
   })
   form.hidden = true;
+             // Create shockwave elements
+    for(let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        const shockwave = document.createElement('div');
+        shockwave.className = 'shockwave';
+        document.querySelector('admin').appendChild(shockwave);
+        
+        // Remove shockwave after animation
+        setTimeout(() => shockwave.remove(), 1000);
+      }, i * 200);
+    }
+
   admun.hidden = false;
          
         }
