@@ -24,7 +24,7 @@ function submit()
       setTimeout(() => {
         const shockwave = document.createElement('div');
         shockwave.className = 'shockwave';
-        document.querySelector('admin').appendChild(shockwave);
+        document.querySelector('.container').appendChild(shockwave);
         
         // Remove shockwave after animation
         setTimeout(() => shockwave.remove(), 1000);
